@@ -1,0 +1,8 @@
+# Environment variables
+.env
+.env.local
+.env.*.local
+server/.env
+
+# Server node_modules (already covered, but ensure it's there)
+server/node_modules

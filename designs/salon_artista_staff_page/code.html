@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Our Team - Salon Artista</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#556B2F",
+                        "accent": "#D4AF37",
+                        "background": "#FAF0E6",
+                        "text": "#38471F",
+                        "background-light": "#FAF0E6",
+                        "background-dark": "#1a1d15",
+                    },
+                    fontFamily: {
+                        "display": ["Epilogue", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                       'xl': '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="px-4 lg:px-10 flex justify-center">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-solid border-text/10 py-3 w-full max-w-7xl">
+<div class="flex items-center gap-4 text-text dark:text-background-light">
+<div class="size-6 text-primary dark:text-accent">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_543)">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs><clipPath id="clip0_6_543"><rect fill="white" height="48" width="48"></rect></clipPath></defs>
+</svg>
+</div>
+<h2 class="text-text dark:text-background-light text-xl font-bold leading-tight tracking-tight">Salon Artista</h2>
+</div>
+<div class="hidden lg:flex flex-1 justify-end items-center gap-8">
+<div class="flex items-center gap-9">
+<a class="text-text dark:text-background-light text-sm font-medium leading-normal hover:text-primary dark:hover:text-accent transition-colors" href="#">Home</a>
+<a class="text-text dark:text-background-light text-sm font-medium leading-normal hover:text-primary dark:hover:text-accent transition-colors" href="#">Services</a>
+<a class="text-text dark:text-background-light text-sm font-medium leading-normal hover:text-primary dark:hover:text-accent transition-colors" href="#">Academics</a>
+<a class="text-primary dark:text-accent text-sm font-bold leading-normal" href="#">Our Team</a>
+<a class="text-text dark:text-background-light text-sm font-medium leading-normal hover:text-primary dark:hover:text-accent transition-colors" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20 dark:bg-accent dark:text-background-dark dark:shadow-accent/20">
+<span class="truncate">Book Now</span>
+</button>
+</div>
+<div class="lg:hidden">
+<button class="text-text dark:text-background-light"><span class="material-symbols-outlined">menu</span></button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="px-4 lg:px-10 py-12 lg:py-20 flex justify-center">
+<div class="layout-content-container flex flex-col items-center text-center max-w-7xl flex-1">
+<h1 class="text-4xl lg:text-6xl font-bold text-primary dark:text-accent tracking-tighter">Meet Our Artistas</h1>
+<p class="mt-4 max-w-2xl text-lg text-text/80 dark:text-background-light/80">Our talented team of stylists, colorists, and specialists are dedicated to bringing your vision to life with skill, passion, and artistry.</p>
+</div>
+</div>
+<div class="px-4 lg:px-10 pb-12 flex flex-col items-center gap-8">
+<div class="flex flex-col items-center gap-4 w-full max-w-7xl">
+<div class="flex flex-wrap items-center justify-center gap-3">
+<button class="px-5 py-2 rounded-xl text-sm font-semibold transition-all text-text/70 dark:text-background-light/70 bg-white/50 dark:bg-text/5 hover:bg-primary/10 dark:hover:bg-accent/10 hover:text-text dark:hover:text-background-light">All</button>
+<button class="px-5 py-2 rounded-xl text-sm font-semibold transition-all bg-primary text-background-light dark:bg-accent dark:text-background-dark shadow-md">Br1</button>
+<button class="px-5 py-2 rounded-xl text-sm font-semibold transition-all text-text/70 dark:text-background-light/70 bg-white/50 dark:bg-text/5 hover:bg-primary/10 dark:hover:bg-accent/10 hover:text-text dark:hover:text-background-light">Br2</button>
+</div>
+<div class="w-full border-b border-solid border-text/10"></div>
+<div class="flex flex-wrap items-center justify-center gap-3">
+<button class="px-5 py-2 rounded-xl text-sm font-semibold transition-all bg-primary text-background-light dark:bg-accent dark:text-background-dark shadow-md">All</button>
+<button class="px-5 py-2 rounded-xl text-sm font-semibold transition-all text-text/70 dark:text-background-light/70 bg-white/50 dark:bg-text/5 hover:bg-primary/10 dark:hover:bg-accent/10 hover:text-text dark:hover:text-background-light">Hair Stylists</button>
+<button class="px-5 py-2 rounded-xl text-sm font-semibold transition-all text-text/70 dark:text-background-light/70 bg-white/50 dark:bg-text/5 hover:bg-primary/10 dark:hover:bg-accent/10 hover:text-text dark:hover:text-background-light">Colorists</button>
+<button class="px-5 py-2 rounded-xl text-sm font-semibold transition-all text-text/70 dark:text-background-light/70 bg-white/50 dark:bg-text/5 hover:bg-primary/10 dark:hover:bg-accent/10 hover:text-text dark:hover:text-background-light">Barbers</button>
+<button class="px-5 py-2 rounded-xl text-sm font-semibold transition-all text-text/70 dark:text-background-light/70 bg-white/50 dark:bg-text/5 hover:bg-primary/10 dark:hover:bg-accent/10 hover:text-text dark:hover:text-background-light">Skincare Experts</button>
+<button class="px-5 py-2 rounded-xl text-sm font-semibold transition-all text-text/70 dark:text-background-light/70 bg-white/50 dark:bg-text/5 hover:bg-primary/10 dark:hover:bg-accent/10 hover:text-text dark:hover:text-background-light">Bridal Specialists</button>
+</div>
+</div>
+</div>
+<div class="px-4 lg:px-10 py-5 flex flex-1 justify-center">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 w-full max-w-7xl">
+<div class="flex flex-col text-center bg-white/50 dark:bg-text/5 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 p-8 items-center">
+<div class="w-40 h-40">
+<div class="w-full h-full bg-center bg-no-repeat aspect-square bg-cover rounded-full border-2 border-accent" data-alt="Headshot of Olivia Chen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBGyz6f3dycCTmQDIlY87XvPxx5RcQsu1bwbHuiSzXJydBx89YbZ846ORjIYEGY2HsiQtNolSOBvScyNZGBna9DM69wOlRQPUOaMV9pFQoH51iI8Jfm8V7LVUd7kcc3kM2RhgSrmvmbVIAvp1WPhlBz-da8nYQmNMxaABVhuOK9x-UJZMsM-Rph1TfzOPaLtG7uttkjOixf2iPjWxclawMnA1NJPitYE1IeX3Q3VnUzbKv9jq_5Z0IO00--u74-UsHfzgw20dK8NCc");'></div>
+</div>
+<div class="mt-6 flex flex-col flex-1">
+<p class="text-xl font-bold text-text dark:text-background-light">Olivia Chen</p>
+<p class="text-sm font-medium text-primary dark:text-accent mt-1">Master Stylist &amp; Color Director</p>
+<p class="text-text/70 dark:text-background-light/70 text-sm font-normal leading-relaxed mt-4 flex-1">
+                                    With over 15 years of experience, Olivia is a master of precision cutting and transformative color. Her passion lies in creating personalized looks that enhance natural beauty and confidence.
+                                </p>
+</div>
+<div class="mt-8 flex justify-center gap-4">
+<a class="text-text/60 hover:text-primary dark:text-background-light/60 dark:hover:text-accent transition-colors" href="#"><svg class="w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+<a class="text-text/60 hover:text-primary dark:text-background-light/60 dark:hover:text-accent transition-colors" href="#"><svg class="w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+</div>
+<button class="mt-6 flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20 dark:bg-accent dark:text-background-dark dark:shadow-accent/20">
+<span class="truncate">Book with Olivia</span>
+</button>
+</div>
+<div class="flex flex-col text-center bg-white/50 dark:bg-text/5 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 p-8 items-center">
+<div class="w-40 h-40">
+<div class="w-full h-full bg-center bg-no-repeat aspect-square bg-cover rounded-full border-2 border-accent" data-alt="Headshot of Benjamin Carter" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAI5kj_360RJXiDcp_cA-_enVEJarxKtIEOss1fdDPQOWZyqEZXCA2HwiHSHH2OOkjdGNhT5VR4Vljkw7wPjkFI_qw1ShOGBbguTxZPMJYD4ZbL-qnTYC76SyxyD-hP28ftaf0MgmWkY43PH89SZzn79YveAXmxvGx5U11TEGKljAzKXF6v0JHVABL8qTDOQGqBX2HT90yCZqUSOvyH3T00GqSgDFTvqLRIzT3GPFiFiHO22gUtvZT_wPsHSth2AVuOB-uwFdEqUoo");'></div>
+</div>
+<div class="mt-6 flex flex-col flex-1">
+<p class="text-xl font-bold text-text dark:text-background-light">Benjamin Carter</p>
+<p class="text-sm font-medium text-primary dark:text-accent mt-1">Lead Barber &amp; Men's Grooming</p>
+<p class="text-text/70 dark:text-background-light/70 text-sm font-normal leading-relaxed mt-4 flex-1">
+                                    Benjamin blends traditional barbering techniques with modern styles. He is dedicated to the craft of men's grooming, offering tailored cuts, shaves, and beard treatments.
+                                </p>
+</div>
+<div class="mt-8 flex justify-center gap-4">
+<a class="text-text/60 hover:text-primary dark:text-background-light/60 dark:hover:text-accent transition-colors" href="#"><svg class="w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+</div>
+<button class="mt-6 flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20 dark:bg-accent dark:text-background-dark dark:shadow-accent/20">
+<span class="truncate">Book with Benjamin</span>
+</button>
+</div>
+<div class="flex flex-col text-center bg-white/50 dark:bg-text/5 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 p-8 items-center">
+<div class="w-40 h-40">
+<div class="w-full h-full bg-center bg-no-repeat aspect-square bg-cover rounded-full border-2 border-accent" data-alt="Headshot of Sophia Rodriguez" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC6yYoJanh2xRs1S2msZrqn7crovahoBN0FDWnEd4hhLAyKEMibTuTgVxamgeHWc9ugy11mYnryNsdJWpxDLJdg6rfCcVouOWezeSLyFEHe5tFJac0u0-lDLILbrlnZqtVX6AgbChxbLn-t0k3j9oBGS4kGkARuLqeEKco8EAwYgcHhOC75UQeRYijH_ClBrqH6oOb9rchLfsbXl9nGUzNjp-On4I4_taZhyyXhCfcTdDEVctTWCUD9VBYy1AfnWVHV-tBkHr2iRps");'></div>
+</div>
+<div class="mt-6 flex flex-col flex-1">
+<p class="text-xl font-bold text-text dark:text-background-light">Sophia Rodriguez</p>
+<p class="text-sm font-medium text-primary dark:text-accent mt-1">Senior Colorist &amp; Balayage Specialist</p>
+<p class="text-text/70 dark:text-background-light/70 text-sm font-normal leading-relaxed mt-4 flex-1">
+                                    Sophia is renowned for her artistic approach to hair color, specializing in lived-in blondes and vibrant balayage. She creates seamless, natural-looking results for every client.
+                                </p>
+</div>
+<div class="mt-8 flex justify-center gap-4">
+<a class="text-text/60 hover:text-primary dark:text-background-light/60 dark:hover:text-accent transition-colors" href="#"><svg class="w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+<a class="text-text/60 hover:text-primary dark:text-background-light/60 dark:hover:text-accent transition-colors" href="#"><svg class="w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M21.19 16.2c-3.1 3.1-6.2.2-9.3-2.9s-6-6.2-2.9-9.3L10.6 6c.9.9 2.5.9 3.4 0l1.4-1.4c.9-.9.9-2.5 0-3.4l-2-2c-.9-.9-2.5-.9-3.4 0s-.9 2.5 0 3.4l2 2-3.2 3.2C6.9 13.9 6 15.6 6 17.5c.1 2 .8 3.8 2.2 5.2s3.2 2.1 5.2 2.2c1.9 0 3.6-.9 5.3-2.6l3.2-3.2 2 2c.9.9 2.5.9 3.4 0s.9-2.5 0-3.4l-2-2c-.9-.9-2.5-.9-3.4 0l-1.4 1.4c-.9.9-.9 2.5 0 3.4l1.6 1.6z"></path></svg></a>
+</div>
+<button class="mt-6 flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20 dark:bg-accent dark:text-background-dark dark:shadow-accent/20">
+<span class="truncate">Book with Sophia</span>
+</button>
+</div>
+<div class="flex flex-col text-center bg-white/50 dark:bg-text/5 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 p-8 items-center">
+<div class="w-40 h-40">
+<div class="w-full h-full bg-center bg-no-repeat aspect-square bg-cover rounded-full border-2 border-accent" data-alt="Headshot of Liam Goldberg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB8q8OKlY6Ma__e16_ynKTYe8ygG8w7UOKpZy0n6SO_nvMtHvoyzVC6L2dB56oBsJ23i0870hzi8dMcSXznd9HSqRmah477FgmefkCM98X4kdYr8ZEqKnJmcEaiwhO4vgCEtieo7LTe7YT8oqg7yCfzxBUhnHbcoeO71gmmZ1WYtjkvIDH3HbCuTxyw_KT0F1sga2JyDnm0bx2WN3Ew35GUyJjI0zBeEvms1R32CRL4kn81Cdo36RpYzpy_C5rY2fM2Z8-gZAWyl5c");'></div>
+</div>
+<div class="mt-6 flex flex-col flex-1">
+<p class="text-xl font-bold text-text dark:text-background-light">Liam Goldberg</p>
+<p class="text-sm font-medium text-primary dark:text-accent mt-1">Creative Stylist &amp; Extensions Artist</p>
+<p class="text-text/70 dark:text-background-light/70 text-sm font-normal leading-relaxed mt-4 flex-1">
+                                    Liam's expertise is in creating voluminous and dramatic styles. He is a certified extensions specialist, skilled in various techniques to add length and fullness to hair.
+                                </p>
+</div>
+<div class="mt-8 flex justify-center gap-4">
+<a class="text-text/60 hover:text-primary dark:text-background-light/60 dark:hover:text-accent transition-colors" href="#"><svg class="w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+</div>
+<button class="mt-6 flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20 dark:bg-accent dark:text-background-dark dark:shadow-accent/20">
+<span class="truncate">Book with Liam</span>
+</button>
+</div>
+<div class="flex flex-col text-center bg-white/50 dark:bg-text/5 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 p-8 items-center">
+<div class="w-40 h-40">
+<div class="w-full h-full bg-center bg-no-repeat aspect-square bg-cover rounded-full border-2 border-accent" data-alt="Headshot of Ava Nguyen" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAEuCPjP_7Mr1iV3mJgn13eWM8zR1mWcdR92ZCsrpdKqU1MQEaXqeEPDYXLfahreQX0b2MP65lT_V1mDwOBo7WbMTPVXG9fvzbuR5LjWVj9-bwYYSdVubGCSa_j-LiVwJrRBEiSJ1AUz5MowTAFTZ7pHdi2-UqaoZzL0Dob3ghSsb8KQi89KBjRQCBmCQVrRdJDFBCqFl5T6M9h6k_kEPCUOWHK51FCrOZDSx3OqQ5jdMfv-UNvndy9BbLzaLJnLMCARVc-W-X4Dyo");'></div>
+</div>
+<div class="mt-6 flex flex-col flex-1">
+<p class="text-xl font-bold text-text dark:text-background-light">Ava Nguyen</p>
+<p class="text-sm font-medium text-primary dark:text-accent mt-1">Lead Esthetician &amp; Skincare Specialist</p>
+<p class="text-text/70 dark:text-background-light/70 text-sm font-normal leading-relaxed mt-4 flex-1">
+                                    Ava is dedicated to holistic skincare, combining advanced treatments with natural ingredients. She provides customized facials and skincare regimens for radiant, healthy skin.
+                                </p>
+</div>
+<div class="mt-8 flex justify-center gap-4">
+<a class="text-text/60 hover:text-primary dark:text-background-light/60 dark:hover:text-accent transition-colors" href="#"><svg class="w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+</div>
+<button class="mt-6 flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20 dark:bg-accent dark:text-background-dark dark:shadow-accent/20">
+<span class="truncate">Book with Ava</span>
+</button>
+</div>
+<div class="flex flex-col text-center bg-white/50 dark:bg-text/5 rounded-xl shadow-xl hover:shadow-2xl transition-shadow duration-300 p-8 items-center">
+<div class="w-40 h-40">
+<div class="w-full h-full bg-center bg-no-repeat aspect-square bg-cover rounded-full border-2 border-accent" data-alt="Headshot of Mason Dubois" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAljgTwaC2drfizFZGLvYolaCn19Q5bn6eihimc6rBMxo2_ZD0Kzfuj_HhxpWk71IzfmWtC4musROoV2-ziQCjMR-F9xcmbVbkQGr3dJPw0hsp6i77-2g-_nzeB2isnqbTMswmiQMONsAqvYhg8HP4ZuGD3iwuLBFuMrKqHqmT9nng5RS_GLbF25SBYlZtzqPH1jbLpZOnJyZ1oG9qrat4DDpVGHv2yPFlqEB1LdOzu5T5aeXMlbNb67TRDh76eqxwMcT0n1rx8A1Y");'></div>
+</div>
+<div class="mt-6 flex flex-col flex-1">
+<p class="text-xl font-bold text-text dark:text-background-light">Mason Dubois</p>
+<p class="text-sm font-medium text-primary dark:text-accent mt-1">Artistic Director &amp; Bridal Specialist</p>
+<p class="text-text/70 dark:text-background-light/70 text-sm font-normal leading-relaxed mt-4 flex-1">
+                                    Mason is the visionary behind our salon's creative direction. With a flair for elegant updos and bridal hair, he ensures every bride looks and feels stunning on her special day.
+                                </p>
+</div>
+<div class="mt-8 flex justify-center gap-4">
+<a class="text-text/60 hover:text-primary dark:text-background-light/60 dark:hover:text-accent transition-colors" href="#"><svg class="w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><rect height="20" rx="5" ry="5" width="20" x="2" y="2"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a>
+<a class="text-text/60 hover:text-primary dark:text-background-light/60 dark:hover:text-accent transition-colors" href="#"><svg class="w-5 h-5" fill="none" height="24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+</div>
+<button class="mt-6 flex min-w-[84px] w-full cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20 dark:bg-accent dark:text-background-dark dark:shadow-accent/20">
+<span class="truncate">Book with Mason</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-primary dark:bg-background-dark text-background-light dark:text-background-light/80 mt-20">
+<div class="mx-auto max-w-7xl px-4 lg:px-10 py-12 lg:py-20">
+<div class="flex flex-col lg:flex-row justify-between items-center lg:items-start gap-12 text-center lg:text-left">
+<div class="flex flex-col items-center lg:items-start">
+<div class="flex items-center gap-4 text-background-light dark:text-accent">
+<div class="size-8">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_543)">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+</svg>
+</div>
+<h2 class="text-2xl font-bold leading-tight tracking-tight">Salon Artista</h2>
+</div>
+<p class="mt-4 max-w-xs text-sm text-background-light/80 dark:text-background-light/60">Where artistry meets elegance. Discover your true beauty with our master stylists.</p>
+</div>
+<div class="flex flex-wrap justify-center lg:justify-end gap-x-12 gap-y-8">
+<div class="flex flex-col gap-4">
+<h3 class="font-bold text-background-light dark:text-accent tracking-wide">Navigate</h3>
+<a class="text-sm text-background-light/80 dark:text-background-light/70 hover:text-white dark:hover:text-accent transition-colors" href="#">Home</a>
+<a class="text-sm text-background-light/80 dark:text-background-light/70 hover:text-white dark:hover:text-accent transition-colors" href="#">Services</a>
+<a class="text-sm text-background-light/80 dark:text-background-light/70 hover:text-white dark:hover:text-accent transition-colors" href="#">Our Team</a>
+<a class="text-sm text-background-light/80 dark:text-background-light/70 hover:text-white dark:hover:text-accent transition-colors" href="#">Academics</a>
+<a class="text-sm text-background-light/80 dark:text-background-light/70 hover:text-white dark:hover:text-accent transition-colors" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="font-bold text-background-light dark:text-accent tracking-wide">Follow Us</h3>
+<a class="text-sm text-background-light/80 dark:text-background-light/70 hover:text-white dark:hover:text-accent transition-colors" href="#">Instagram</a>
+<a class="text-sm text-background-light/80 dark:text-background-light/70 hover:text-white dark:hover:text-accent transition-colors" href="#">Facebook</a>
+<a class="text-sm text-background-light/80 dark:text-background-light/70 hover:text-white dark:hover:text-accent transition-colors" href="#">Pinterest</a>
+</div>
+</div>
+</div>
+<div class="mt-12 pt-8 border-t border-background-light/20 dark:border-background-light/10 text-center">
+<p class="text-sm text-background-light/60 dark:text-background-light/50">© 2024 Salon Artista. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>

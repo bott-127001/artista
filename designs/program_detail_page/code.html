@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Salon Artista Academy - Academics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#556B2F",
+                        "accent": "#D4AF37",
+                        "background-light": "#FAF0E6",
+                        "background-dark": "#1b2111",
+                        "text-primary": "#38471F",
+                        "text-secondary": "#FAF0E6"
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    boxShadow: {
+                        'xl': '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background-light font-display text-text-primary">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="fixed top-0 z-50 flex w-full items-center justify-between whitespace-nowrap border-b border-solid border-black/10 bg-white/80 px-4 py-3 shadow-sm backdrop-blur-sm sm:px-10">
+<div class="flex items-center gap-4">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-lg font-bold tracking-tight text-primary">Salon Artista</h2>
+</div>
+<div class="hidden items-center justify-end gap-8 lg:flex">
+<nav class="flex items-center gap-9">
+<a class="text-sm font-medium text-text-primary/70 hover:text-primary" href="#">Home</a>
+<a class="text-sm font-medium text-text-primary/70 hover:text-primary" href="#">Services</a>
+<a class="text-sm font-medium text-primary" href="#">Academics</a>
+<a class="text-sm font-medium text-text-primary/70 hover:text-primary" href="#">About</a>
+<a class="text-sm font-medium text-text-primary/70 hover:text-primary" href="#">Contact</a>
+</nav>
+<button class="flex h-10 min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-accent px-4 text-sm font-bold text-text-primary shadow-lg transition-transform hover:scale-105">
+<span class="truncate">Book Appointment</span>
+</button>
+</div>
+</header>
+<main class="flex-grow pt-20">
+<div class="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
+<div class="w-full">
+<div class="bg-cover bg-center flex min-h-[400px] flex-col justify-end overflow-hidden rounded-xl shadow-xl" data-alt="A stylist carefully cuts a client's hair in a modern, well-lit salon." style='background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 40%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuBLTa_k_x-WTYweC-Oyfh8N8x1QL6z9c67lB9Ug5SK85j12Rhq0ry-_BP9z3fSE-tur-ow5FV-AWMaRXbpA-vRJhdIjHp3v6fG28gRzykupK9fD8E9RJ55InKXJaznIdW34VDPw9vhyp5H0-O-FCYT71mkwvoxs-enyFhRWE-gcCz_NQdfqTxHYvstzcaXzChyj7-ofn-ffY702Z1Av4cb2z43nKpPCZ0Ggw7YJF0On7qcrh0c05sIr8pn8HdgGjOujyxRsv_6NRXw");'>
+<div class="p-8 md:p-12">
+<h1 class="text-4xl font-bold tracking-tight text-white md:text-5xl">Advanced Hairdressing Mastery</h1>
+<p class="mt-2 max-w-2xl text-lg text-gray-200">Elevate your craft and unlock your artistic potential with our premier advanced course.</p>
+</div>
+</div>
+</div>
+<div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4">
+<div class="flex flex-col gap-2 rounded-xl border border-black/10 bg-white/50 p-6 shadow-xl">
+<p class="text-base font-medium text-text-primary">Duration</p>
+<p class="text-3xl font-bold tracking-tight text-text-primary">6 Months</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl border border-black/10 bg-white/50 p-6 shadow-xl">
+<p class="text-base font-medium text-text-primary">Prerequisites</p>
+<p class="text-3xl font-bold tracking-tight text-text-primary">Basic Certification</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl border border-black/10 bg-white/50 p-6 shadow-xl">
+<p class="text-base font-medium text-text-primary">Schedule</p>
+<p class="text-3xl font-bold tracking-tight text-text-primary">Full-Time</p>
+</div>
+<div class="flex flex-col gap-2 rounded-xl border border-black/10 bg-white/50 p-6 shadow-xl">
+<p class="text-base font-medium text-text-primary">Cost</p>
+<p class="text-3xl font-bold tracking-tight text-text-primary">$12,000</p>
+</div>
+</div>
+<div class="mt-12">
+<h2 class="text-3xl font-bold tracking-tight text-primary">Program Overview</h2>
+<p class="mt-4 text-base leading-relaxed text-text-primary">This comprehensive program is designed to elevate your hairdressing skills to an expert level. Through hands-on training and theoretical knowledge, you will master advanced techniques in cutting, coloring, and styling, preparing you for a successful career in high-end salons. Our curriculum blends artistic vision with technical precision, ensuring you graduate as a confident and sought-after professional.</p>
+</div>
+<div class="mt-12 grid grid-cols-1 gap-12 md:grid-cols-2">
+<div>
+<h3 class="text-2xl font-bold text-primary">Curriculum Breakdown</h3>
+<div class="mt-4 space-y-4">
+<details class="group rounded-xl border border-black/10 bg-white/50 p-4 shadow-xl" open="">
+<summary class="flex cursor-pointer list-none items-center justify-between font-medium text-text-primary">
+                                    Module 1: Precision Cutting
+                                    <span class="transition-transform group-open:rotate-180">
+<span class="material-symbols-outlined text-accent">expand_more</span>
+</span>
+</summary>
+<p class="mt-2 text-sm text-text-primary">Master advanced geometric shapes, texturizing techniques, and razor cutting for both classic and contemporary styles.</p>
+</details>
+<details class="group rounded-xl border border-black/10 bg-white/50 p-4 shadow-xl">
+<summary class="flex cursor-pointer list-none items-center justify-between font-medium text-text-primary">
+                                    Module 2: Creative Coloring
+                                     <span class="transition-transform group-open:rotate-180">
+<span class="material-symbols-outlined text-accent">expand_more</span>
+</span>
+</summary>
+<p class="mt-2 text-sm text-text-primary">Explore balayage, foilyage, color melting, and complex color correction scenarios to create bespoke looks for every client.</p>
+</details>
+<details class="group rounded-xl border border-black/10 bg-white/50 p-4 shadow-xl">
+<summary class="flex cursor-pointer list-none items-center justify-between font-medium text-text-primary">
+                                    Module 3: Advanced Styling &amp; Updos
+                                    <span class="transition-transform group-open:rotate-180">
+<span class="material-symbols-outlined text-accent">expand_more</span>
+</span>
+</summary>
+<p class="mt-2 text-sm text-text-primary">Learn intricate braiding, avant-garde styling, and red-carpet-worthy updos for weddings and special events.</p>
+</details>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-primary">Learning Outcomes</h3>
+<ul class="mt-4 space-y-3">
+<li class="flex items-start">
+<span class="material-symbols-outlined mr-2 text-accent">check_circle</span>
+<span class="text-text-primary">Execute a wide range of advanced cutting and coloring techniques with confidence and precision.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined mr-2 text-accent">check_circle</span>
+<span class="text-text-primary">Conduct in-depth client consultations to design personalized, high-end looks.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined mr-2 text-accent">check_circle</span>
+<span class="text-text-primary">Build a professional portfolio showcasing your advanced skills and unique artistic style.</span>
+</li>
+<li class="flex items-start">
+<span class="material-symbols-outlined mr-2 text-accent">check_circle</span>
+<span class="text-text-primary">Develop business acumen for salon management and client retention.</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-16">
+<h2 class="text-center text-3xl font-bold tracking-tight text-primary">Meet Your Instructors</h2>
+<div class="mt-8 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+<div class="flex flex-col items-center rounded-xl bg-white/50 p-6 text-center shadow-xl">
+<img class="h-28 w-28 rounded-full object-cover" data-alt="Headshot of Instructor Amelia Vance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqz111SVF5pGnnXwHKKYkl83Nkcr7-V9dpDian2-59Bt1RSfrL_oojCPVAVP2mAzVzTzDMtGOdpINfBK727d0R2n5bYk6HzUYNB1BpCG2kW8O-jQeZ7uZtzrmgAoG0bqDqk07tkYBCCmBSXzKqu_C-TIOaG5IukBnKTG8SWI255GrVdJe4z91oef-7i-wpNvs2BC18XMPeSB5SgdqnZI41as9iVpSmdWvm1W9T8kJfaz1ppiiXPMw0JhoCuQLAMrQIeM0PziwXHmg"/>
+<h4 class="mt-4 font-bold text-text-primary">Amelia Vance</h4>
+<p class="text-sm text-primary">Lead Educator, Cutting</p>
+<p class="mt-2 text-xs text-text-primary">With 15 years of editorial styling experience, Amelia brings a sharp eye for detail and trend-setting vision.</p>
+</div>
+<div class="flex flex-col items-center rounded-xl bg-white/50 p-6 text-center shadow-xl">
+<img class="h-28 w-28 rounded-full object-cover" data-alt="Headshot of Instructor Ben Carter" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0tU4iIE2Ctv0gdD9ph3VjAYRRDbtfZp0d5yJcqgZh6rdK_5aErkdhSPdZebbmWSAdYuiCnscoQNEs4b0wAw9e8OsAgdoc1Mf0TwoQnRC-un_3ecJRCf4GbINyaK_XY_X_W5VPAyTiTIqXnVsCBh1lyEb1a-LhMPf9vSIMMFJogOtCbMYc8qZk-7i2IQE2O_HsdJzsgadSOyHsJcAxTKPrH6Mzi-efrm84F3p75fCPB8qxxILp90jMGBEZFVNERVdEPWKfdAHA0XI"/>
+<h4 class="mt-4 font-bold text-text-primary">Ben Carter</h4>
+<p class="text-sm text-primary">Master Colorist</p>
+<p class="mt-2 text-xs text-text-primary">A certified color master, Ben is renowned for his innovative techniques in balayage and color correction.</p>
+</div>
+<div class="flex flex-col items-center rounded-xl bg-white/50 p-6 text-center shadow-xl">
+<img class="h-28 w-28 rounded-full object-cover" data-alt="Headshot of Instructor Chloe Davis" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQO7kh_HhPgXa5lySMp7nJ6nJ4tySfRALHq_2axeNxf0ffvF6KpzBo4tAJfPUBghKA0nuAP1KkKPCLE87MZtiF6zBfQvCbGQwHhhD-iUaawHhvGtIzo56fuu_oeh3QGGwISEYiKsecFNnauddqJC6r6KtT_mbixDANjr97Czw6v-12eNel6p1jDEqjgGTNABTzRUKSz1X2XZHGO6PymQxB0lK__3luOTNJE5DcW3tQjSKOGVQvflY9z5FylS8ETqwtqC_8xx1I76g"/>
+<h4 class="mt-4 font-bold text-text-primary">Chloe Davis</h4>
+<p class="text-sm text-primary">Styling &amp; Business Lead</p>
+<p class="mt-2 text-xs text-text-primary">Chloe's expertise lies in bridal updos and business strategies for freelance stylists.</p>
+</div>
+</div>
+</div>
+<div class="mt-16">
+<h2 class="text-center text-3xl font-bold tracking-tight text-primary">What Our Graduates Say</h2>
+<div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
+<div class="rounded-xl bg-white/50 p-8 shadow-xl">
+<div class="flex items-center">
+<img class="h-14 w-14 rounded-full object-cover" data-alt="Photo of graduate Olivia Chen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4iuzyejuVpO2bhKUIKXzF_A4Q0O5CYXultdigG3c_g9AC7SxS8U7QcMibkmFOf6Kme3k5Dku7zigC5XNTB2bwjQHASEdvpv0DCuRf8PZv0v653XbZcdaKZ-mVql85cyHs2mT-A7_WLILNBwLqf7aGNfbuhvoQWG5l9nAMPN4niNFmx3hwt7klFXT2bxoBCHFS64gcFn-c_fHiR3mUSzBtOyAqpQbX9HqL6k9F7BTBazEK45AAWUuqzj5QvsQi_WUTBUu9UYQEccQ"/>
+<div class="ml-4">
+<p class="font-bold text-text-primary">Olivia Chen</p>
+<div class="flex text-accent">
+<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+</div>
+</div>
+</div>
+<p class="mt-4 text-text-primary">"This course completely transformed my career. The hands-on training was incredible, and the instructors are true masters of their craft. I landed a job at my dream salon before I even graduated."</p>
+</div>
+<div class="rounded-xl bg-white/50 p-8 shadow-xl">
+<div class="flex items-center">
+<img class="h-14 w-14 rounded-full object-cover" data-alt="Photo of graduate Liam Rodriguez" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW-JpZVE6hCITMnoCWGAQPtTCSSteVvcy1oL5ULfRYGAPUS8aW7XLyArJhQ5QQbM1wSgT8pM1tMBaDs3Yp2puqTxNPPuIsNlZy3IbOxF-QTvdUufMfzTVErOgqvzLrvzGi2W5ZUGdNiqy0xX-cTi9R9hxD-h7iRoyds9ewbtQYVL53Cesm0C_GO1R9yPpgztVTLxs-_YsmECGi2vviiRuKIVgCqmIEukaUdndfUCAU4sM9sm4k9FPTvPXReT5jcAVTifwifNIuD1A"/>
+<div class="ml-4">
+<p class="font-bold text-text-primary">Liam Rodriguez</p>
+<div class="flex text-accent">
+<span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span><span class="material-symbols-outlined">star</span>
+</div>
+</div>
+</div>
+<p class="mt-4 text-text-primary">"I hesitated because of the investment, but it was worth every penny. The depth of knowledge, from advanced coloring to business skills, is unmatched. My confidence and client base have soared."</p>
+</div>
+</div>
+</div>
+<div class="mt-16 rounded-xl bg-primary p-8 text-center text-text-secondary shadow-xl md:p-12">
+<h2 class="text-3xl font-bold tracking-tight">Ready to Master Your Craft?</h2>
+<p class="mx-auto mt-4 max-w-2xl text-base">Take the next step in your professional journey. Our enrollment advisors are ready to answer your questions and guide you through the application process.</p>
+<div class="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
+<button class="flex h-12 w-full items-center justify-center rounded-xl bg-accent px-6 text-sm font-bold text-text-primary shadow-lg transition-transform hover:scale-105 sm:w-auto">Enroll Now</button>
+<button class="flex h-12 w-full items-center justify-center rounded-xl border-2 border-text-secondary bg-primary px-6 text-sm font-bold text-text-secondary shadow-lg transition-colors hover:bg-text-secondary hover:text-primary sm:w-auto">Request Information</button>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-primary/90 text-text-secondary">
+<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+<div class="grid grid-cols-2 gap-8 md:grid-cols-4">
+<div>
+<h4 class="font-bold">Salon Artista Academy</h4>
+<p class="mt-2 text-sm">Crafting the future of beauty, one artist at a time.</p>
+</div>
+<div>
+<h5 class="font-semibold">Quick Links</h5>
+<ul class="mt-2 space-y-1 text-sm">
+<li><a class="hover:text-accent" href="#">Home</a></li>
+<li><a class="hover:text-accent" href="#">Academics</a></li>
+<li><a class="hover:text-accent" href="#">About Us</a></li>
+<li><a class="hover:text-accent" href="#">Apply</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-semibold">Contact</h5>
+<ul class="mt-2 space-y-1 text-sm">
+<li>123 Beauty Lane, Suite 100</li>
+<li>New York, NY 10001</li>
+<li>(212) 555-0123</li>
+<li>admissions@artista.edu</li>
+</ul>
+</div>
+<div>
+<h5 class="font-semibold">Follow Us</h5>
+<div class="mt-2 flex space-x-4">
+<a class="hover:text-accent" href="#">FB</a>
+<a class="hover:text-accent" href="#">IG</a>
+<a class="hover:text-accent" href="#">LI</a>
+</div>
+</div>
+</div>
+<div class="mt-8 border-t border-text-secondary/20 pt-8 text-center text-sm">
+<p>© 2024 Salon Artista Academy. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

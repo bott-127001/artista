@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Salon Artista - Services</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        .sticky-nav {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#d4af37", /* Warm Gold/Brass */
+              "background-light": "#faf0e6", /* Pale Cream/Beige */
+              "background-dark": "#38471f", /* Dark Olive */
+              "heading": "#556B2F", /* Rich Olive Green */
+              "text-light": "#38471F", /* Dark Olive */
+              "text-dark": "#faf0e6" /* Pale Cream/Beige */
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "1rem", "xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="flex items-center justify-between whitespace-nowrap border-b border-black/10 dark:border-white/10 px-4 md:px-10 lg:px-20 py-4 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm sticky top-0 z-50">
+<div class="flex items-center gap-4 text-heading dark:text-primary">
+<div class="size-6">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_543)">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clippath id="clip0_6_543">
+<rect fill="white" height="48" width="48"></rect>
+</clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-heading dark:text-primary text-xl font-bold tracking-tight">Salon Artista</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="hidden md:flex items-center gap-9">
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-primary dark:text-primary text-sm font-bold leading-normal" href="#">Services</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">About</a>
+<a class="text-text-light dark:text-text-dark text-sm font-medium leading-normal hover:text-primary dark:hover:text-primary transition-colors" href="#">Contact</a>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 bg-primary text-text-light text-sm font-bold leading-normal tracking-[0.015em] shadow-lg shadow-primary/20 hover:bg-opacity-90 transition-all">
+<span class="truncate">Book Now</span>
+</button>
+</div>
+</header>
+<main class="flex-grow">
+<!-- PageHeading (Sub-Hero) -->
+<section class="py-16 sm:py-20 lg:py-24 px-4">
+<div class="max-w-4xl mx-auto text-center">
+<h1 class="text-text-light dark:text-text-dark text-4xl sm:text-5xl md:text-6xl font-black tracking-tighter">The Menu of Mastery</h1>
+<p class="mt-4 text-lg text-text-light/80 dark:text-text-dark/80 max-w-2xl mx-auto">
+                        Discover our comprehensive suite of services, meticulously crafted to elevate your natural beauty and well-being with an artistic touch.
+                    </p>
+</div>
+</section>
+<!-- Sticky Category Navigation Bar -->
+<nav class="sticky-nav bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-t border-black/10 dark:border-white/10">
+<div class="max-w-5xl mx-auto">
+<div class="flex justify-center md:justify-between">
+<a class="flex flex-col items-center justify-center text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary py-4 px-4 sm:px-6 flex-1 transition-colors" href="#hair">
+<p class="text-sm font-bold leading-normal tracking-[0.015em] text-center">Hair &amp; Trichology</p>
+</a>
+<a class="flex flex-col items-center justify-center text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary py-4 px-4 sm:px-6 flex-1 transition-colors" href="#beauty">
+<p class="text-sm font-bold leading-normal tracking-[0.015em] text-center">Beauty &amp; Cosmetology</p>
+</a>
+<a class="flex flex-col items-center justify-center text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary py-4 px-4 sm:px-6 flex-1 transition-colors" href="#nails">
+<p class="text-sm font-bold leading-normal tracking-[0.015em] text-center">Nail Art &amp; Pedicure</p>
+</a>
+<a class="flex flex-col items-center justify-center text-text-light dark:text-text-dark hover:text-primary dark:hover:text-primary py-4 px-4 sm:px-6 flex-1 transition-colors" href="#specialized">
+<p class="text-sm font-bold leading-normal tracking-[0.015em] text-center">Specialized Artistry</p>
+</a>
+</div>
+</div>
+</nav>
+<div class="space-y-16 sm:space-y-24 py-16 sm:py-24 px-4">
+<!-- Service Category Section: Hair -->
+<section class="max-w-5xl mx-auto scroll-mt-24" id="hair">
+<div class="bg-white dark:bg-black/20 p-8 sm:p-12 rounded-xl shadow-xl shadow-heading/10">
+<h2 class="text-heading dark:text-primary text-3xl sm:text-4xl font-bold tracking-tight">Hair &amp; Trichology</h2>
+<p class="text-text-light dark:text-text-dark/90 mt-4 max-w-3xl">
+                            Experience the art of hairdressing with our expert stylists. From precision cuts to vibrant color and restorative treatments, we tailor every service to your unique hair type and desired look, ensuring health and radiance.
+                        </p>
+<div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Artisan Haircut &amp; Style</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Personalized consultation, cut, and professional blow-dry finish.</p>
+<p class="text-sm font-bold text-primary mt-1">$75+</p>
+</div>
+</div>
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Full Balayage</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Hand-painted highlights for a natural, sun-kissed look.</p>
+<p class="text-sm font-bold text-primary mt-1">$250+</p>
+</div>
+</div>
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Single Process Color</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">All-over color application for richness and gray coverage.</p>
+<p class="text-sm font-bold text-primary mt-1">$120+</p>
+</div>
+</div>
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Keratin Smoothing Treatment</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Reduces frizz and enhances shine for up to 5 months.</p>
+<p class="text-sm font-bold text-primary mt-1">$350+</p>
+</div>
+</div>
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Deep Conditioning Mask</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Intensive moisture and repair for stressed tresses.</p>
+<p class="text-sm font-bold text-primary mt-1">$50+</p>
+</div>
+</div>
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Formal Updo / Styling</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Elegant styling for special occasions, weddings, and events.</p>
+<p class="text-sm font-bold text-primary mt-1">$95+</p>
+</div>
+</div>
+</div>
+<div class="mt-10">
+<button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-primary text-text-light text-base font-bold leading-normal tracking-[0.015em] shadow-lg shadow-primary/20 hover:bg-opacity-90 transition-all">
+<span class="truncate">Book Hair Services</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Service Category Section: Beauty -->
+<section class="max-w-5xl mx-auto scroll-mt-24" id="beauty">
+<div class="bg-white dark:bg-black/20 p-8 sm:p-12 rounded-xl shadow-xl shadow-heading/10">
+<h2 class="text-heading dark:text-primary text-3xl sm:text-4xl font-bold tracking-tight">Beauty &amp; Cosmetology (Skin)</h2>
+<p class="text-text-light dark:text-text-dark/90 mt-4 max-w-3xl">
+                            Revitalize your complexion with our advanced skin therapies. Each treatment is customized to address your specific concerns, from aging to acne, using premium products to unveil your skin's natural luminosity.
+                        </p>
+<div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Signature Radiance Facial</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">A deep cleansing, exfoliating, and hydrating facial tailored to you.</p>
+<p class="text-sm font-bold text-primary mt-1">$150+</p>
+</div>
+</div>
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Anti-Aging Collagen Peel</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Chemical exfoliation to reduce fine lines and boost collagen.</p>
+<p class="text-sm font-bold text-primary mt-1">$180+</p>
+</div>
+</div>
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Dermaplaning Treatment</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Removes dead skin cells and vellus hair for a smooth canvas.</p>
+<p class="text-sm font-bold text-primary mt-1">$90+</p>
+</div>
+</div>
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Hydra-Infusion Therapy</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Oxygen and serum infusion for ultimate hydration and glow.</p>
+<p class="text-sm font-bold text-primary mt-1">$220+</p>
+</div>
+</div>
+</div>
+<div class="mt-10">
+<button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-primary text-text-light text-base font-bold leading-normal tracking-[0.015em] shadow-lg shadow-primary/20 hover:bg-opacity-90 transition-all">
+<span class="truncate">Book Beauty Services</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Service Category Section: Nails -->
+<section class="max-w-5xl mx-auto scroll-mt-24" id="nails">
+<div class="bg-white dark:bg-black/20 p-8 sm:p-12 rounded-xl shadow-xl shadow-heading/10">
+<h2 class="text-heading dark:text-primary text-3xl sm:text-4xl font-bold tracking-tight">Nail Art &amp; Pedicure</h2>
+<p class="text-text-light dark:text-text-dark/90 mt-4 max-w-3xl">
+                            Indulge in meticulous nail care. Our artists create stunning, durable manicures and pedicures, from classic elegance to intricate custom designs, in a serene and hygienic environment.
+                        </p>
+<div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Luxury Spa Manicure</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Includes shaping, cuticle care, massage, and polish.</p>
+<p class="text-sm font-bold text-primary mt-1">$55+</p>
+</div>
+</div>
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Gel Polish Manicure</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Long-lasting, chip-free color with a high-gloss finish.</p>
+<p class="text-sm font-bold text-primary mt-1">$70+</p>
+</div>
+</div>
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Signature Pedicure</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Soak, exfoliation, callus removal, massage, and polish.</p>
+<p class="text-sm font-bold text-primary mt-1">$85+</p>
+</div>
+</div>
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Custom Nail Art</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Intricate, hand-painted designs. Priced per nail.</p>
+<p class="text-sm font-bold text-primary mt-1">$10+ / nail</p>
+</div>
+</div>
+</div>
+<div class="mt-10">
+<button class="flex min-w-[120px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-6 bg-primary text-text-light text-base font-bold leading-normal tracking-[0.015em] shadow-lg shadow-primary/20 hover:bg-opacity-90 transition-all">
+<span class="truncate">Book Nail Services</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Service Category Section: Specialized -->
+<section class="max-w-5xl mx-auto scroll-mt-24" id="specialized">
+<div class="bg-white dark:bg-black/20 p-8 sm:p-12 rounded-xl shadow-xl shadow-heading/10">
+<h2 class="text-heading dark:text-primary text-3xl sm:text-4xl font-bold tracking-tight">Specialized Artistry</h2>
+<p class="text-text-light dark:text-text-dark/90 mt-4 max-w-3xl">
+                           Our most advanced services for transformative results. These treatments are performed by our master artists and require the utmost precision, skill, and care to perfect your look.
+                        </p>
+<div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Microblading &amp; Brow Lamination</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Semi-permanent brow enhancement for flawless shape.</p>
+<p class="text-sm font-bold text-primary mt-1">$500+</p>
+</div>
+</div>
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Eyelash Extensions</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Full sets and fills in classic, hybrid, or volume styles.</p>
+<p class="text-sm font-bold text-primary mt-1">$200+</p>
+</div>
+</div>
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Bridal &amp; Event Makeup</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Professional makeup application with premium products.</p>
+<p class="text-sm font-bold text-primary mt-1">$150+</p>
+</div>
+</div>
+<!-- Service Item -->
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+<div>
+<h3 class="font-bold text-text-light dark:text-text-dark">Hair Extensions</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Tape-in, keratin bond, and weft methods available.</p>
+<p class="text-sm font-bold text-primary mt-1">By Consultation</p>
+</div>
+</div>
+</div>
+<!-- Warning/Advisory Box -->
+<div class="mt-10 bg-primary/10 dark:bg-primary/20 p-6 rounded-xl border border-primary/30">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-2xl mt-1">info</span>
+<div>
+<h4 class="font-bold text-heading dark:text-primary">Consultation Required</h4>
+<p class="text-sm text-text-light dark:text-text-dark/90 mt-1">
+                                        For your safety and to ensure optimal results, many of our Specialized Artistry services require a mandatory consultation prior to booking. Please contact us to schedule your complimentary assessment.
+                                    </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Dedicated Booking Section -->
+<section class="py-16 sm:py-24 bg-heading dark:bg-black/20">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<h2 class="text-background-light dark:text-primary text-3xl sm:text-4xl font-bold tracking-tight">Ready to Transform Your Look?</h2>
+<p class="text-background-light/80 dark:text-text-dark/80 mt-4 max-w-2xl mx-auto">
+                        Your journey to radiant beauty begins here. Secure your appointment with one of our master stylists and experience the Salon Artista difference.
+                    </p>
+<div class="mt-8">
+<button class="flex min-w-[180px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-8 bg-primary text-text-light text-lg font-bold leading-normal tracking-[0.015em] shadow-2xl shadow-primary/30 hover:bg-opacity-90 transition-all mx-auto">
+<span class="truncate">Book Your Appointment</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Standard Footer -->
+<footer class="bg-background-light dark:bg-background-dark border-t border-black/10 dark:border-white/10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="md:col-span-1">
+<div class="flex items-center gap-2">
+<div class="size-6 text-heading dark:text-primary">
+<svg fill="currentColor" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_543_footer)">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z"></path>
+<path clip-rule="evenodd" d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z"></path>
+</g>
+<defs>
+<clippath id="clip0_6_543_footer"><rect fill="white" height="48" width="48"></rect></clippath>
+</defs>
+</svg>
+</div>
+<h2 class="text-heading dark:text-primary text-xl font-bold tracking-tight">Salon Artista</h2>
+</div>
+<p class="mt-4 text-sm text-text-light/80 dark:text-text-dark/80">Crafting beauty, one masterpiece at a time. Experience artistry, luxury, and personalized care.</p>
+</div>
+<div>
+<h3 class="text-sm font-bold tracking-wider uppercase text-text-light dark:text-text-dark">Quick Links</h3>
+<ul class="mt-4 space-y-2">
+<li><a class="text-sm text-text-light/80 dark:text-text-dark/80 hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a></li>
+<li><a class="text-sm text-text-light/80 dark:text-text-dark/80 hover:text-primary dark:hover:text-primary transition-colors" href="#">Services</a></li>
+<li><a class="text-sm text-text-light/80 dark:text-text-dark/80 hover:text-primary dark:hover:text-primary transition-colors" href="#">About Us</a></li>
+<li><a class="text-sm text-text-light/80 dark:text-text-dark/80 hover:text-primary dark:hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div>
+<h3 class="text-sm font-bold tracking-wider uppercase text-text-light dark:text-text-dark">Contact Us</h3>
+<ul class="mt-4 space-y-2 text-sm text-text-light/80 dark:text-text-dark/80">
+<li>123 Beauty Lane, Artville, 45678</li>
+<li>(123) 456-7890</li>
+<li>contact@salonartista.com</li>
+</ul>
+</div>
+<div>
+<h3 class="text-sm font-bold tracking-wider uppercase text-text-light dark:text-text-dark">Follow Us</h3>
+<div class="flex mt-4 space-x-4">
+<a class="text-text-light/80 dark:text-text-dark/80 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-text-light/80 dark:text-text-dark/80 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.2 6.4c.1.3.2.6.2.9 0 2.8-2.2 6-6 6-.9 0-1.8-.2-2.7-.8.3 0 .6.1.9.1.8 0 1.5-.3 2.1-.7-.8 0-1.4-.5-1.6-1.2.3 0 .5 0 .8-.1-.8-.2-1.4-.9-1.4-1.8v-.1c.2.1.5.2.8.2-.5-.3-.8-.8-.8-1.4 0-.3.1-.6.2-.9.9 1.1 2.2 1.8 3.6 1.8.2-1 1-1.7 1.9-1.7.6 0 1.1.2 1.4.6.4-.1.8-.2 1.2-.5-.1.5-.5.9-.8 1.1.4 0 .8-.2 1.1-.3-.3.4-.6.7-1 1z"></path></svg>
+</a>
+<a class="text-text-light/80 dark:text-text-dark/80 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M12 2C6.477 2 2 6.477 2 12c0 1.886.514 3.64 1.42 5.163-.005-.015-.01-.03-.015-.045A9.95 9.95 0 0112 2c5.523 0 10 4.477 10 10 0 1.886-.514 3.64-1.42 5.163.005-.015.01-.03.015-.045A9.95 9.95 0 0112 22C6.477 22 2 17.523 2 12zm7-2a8 8 0 11-16 0 8 8 0 0116 0zm-4 4a4 4 0 11-8 0 4 4 0 018 0zm-8.5 6.5a.5.5 0 01.5-.5h7a.5.5 0 010 1h-7a.5.5 0 01-.5-.5z" fill-rule="evenodd"></path></svg>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-8 border-t border-black/10 dark:border-white/10 pt-8 text-center text-sm text-text-light/70 dark:text-text-dark/70">
+<p>© 2024 Salon Artista. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+</body></html>

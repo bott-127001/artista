@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shop - Salon Artista</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#556B2F",
+                        "accent": "#D4AF37",
+                        "background": "#FAF0E6",
+                        "text-color": "#38471F",
+                    },
+                    fontFamily: {
+                        "display": ["Epilogue", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background font-display text-text-color">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="fixed top-0 z-50 w-full bg-background/80 backdrop-blur-sm">
+<div class="container mx-auto px-4">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-solid border-text-color/20 py-4">
+<div class="flex items-center gap-4 text-text-color">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_543)">
+<path d="M42.1739 20.1739L27.8261 5.82609C29.1366 7.13663 28.3989 10.1876 26.2002 13.7654C24.8538 15.9564 22.9595 18.3449 20.6522 20.6522C18.3449 22.9595 15.9564 24.8538 13.7654 26.2002C10.1876 28.3989 7.13663 29.1366 5.82609 27.8261L20.1739 42.1739C21.4845 43.4845 24.5355 42.7467 28.1133 40.548C30.3042 39.2016 32.6927 37.3073 35 35C37.3073 32.6927 39.2016 30.3042 40.548 28.1133C42.7467 24.5355 43.4845 21.4845 42.1739 20.1739Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M7.24189 26.4066C7.31369 26.4411 7.64204 26.5637 8.52504 26.3738C9.59462 26.1438 11.0343 25.5311 12.7183 24.4963C14.7583 23.2426 17.0256 21.4503 19.238 19.238C21.4503 17.0256 23.2426 14.7583 24.4963 12.7183C25.5311 11.0343 26.1438 9.59463 26.3738 8.52504C26.5637 7.64204 26.4411 7.31369 26.4066 7.24189C26.345 7.21246 26.143 7.14535 25.6664 7.1918C24.9745 7.25925 23.9954 7.5498 22.7699 8.14278C20.3369 9.32007 17.3369 11.4915 14.4142 14.4142C11.4915 17.3369 9.32007 20.3369 8.14278 22.7699C7.5498 23.9954 7.25925 24.9745 7.1918 25.6664C7.14534 26.143 7.21246 26.345 7.24189 26.4066ZM29.9001 10.7285C29.4519 12.0322 28.7617 13.4172 27.9042 14.8126C26.465 17.1544 24.4686 19.6641 22.0664 22.0664C19.6641 24.4686 17.1544 26.465 14.8126 27.9042C13.4172 28.7617 12.0322 29.4519 10.7285 29.9001L21.5754 40.747C21.6001 40.7606 21.8995 40.931 22.8729 40.7217C23.9424 40.4916 25.3821 39.879 27.0661 38.8441C29.1062 37.5904 31.3734 35.7982 33.5858 33.5858C35.7982 31.3734 37.5904 29.1062 38.8441 27.0661C39.879 25.3821 40.4916 23.9425 40.7216 22.8729C40.931 21.8995 40.7606 21.6001 40.747 21.5754L29.9001 10.7285ZM29.2403 4.41187L43.5881 18.7597C44.9757 20.1473 44.9743 22.1235 44.6322 23.7139C44.2714 25.3919 43.4158 27.2666 42.252 29.1604C40.8128 31.5022 38.8165 34.012 36.4142 36.4142C34.012 38.8165 31.5022 40.8128 29.1604 42.252C27.2666 43.4158 25.3919 44.2714 23.7139 44.6322C22.1235 44.9743 20.1473 44.9757 18.7597 43.5881L4.41187 29.2403C3.29027 28.1187 3.08209 26.5973 3.21067 25.2783C3.34099 23.9415 3.8369 22.4852 4.54214 21.0277C5.96129 18.0948 8.43335 14.7382 11.5858 11.5858C14.7382 8.43335 18.0948 5.9613 21.0277 4.54214C22.4852 3.8369 23.9415 3.34099 25.2783 3.21067C26.5973 3.08209 28.1187 3.29028 29.2403 4.41187Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_543">
+<rect fill="white" height="48" width="48"></rect>
+</clipPath>
+</defs>
+</svg>
+</div>
+<h2 class="text-text-color text-xl font-bold">Salon Artista</h2>
+</div>
+<nav class="hidden items-center gap-9 text-text-color lg:flex">
+<a class="text-sm font-medium hover:text-primary" href="#">Home</a>
+<a class="text-sm font-medium hover:text-primary" href="#">Services</a>
+<a class="text-sm font-bold text-primary" href="#">Products</a>
+<a class="text-sm font-medium hover:text-primary" href="#">Academics</a>
+<a class="text-sm font-medium hover:text-primary" href="#">Staff</a>
+</nav>
+<div class="flex flex-1 justify-end gap-4">
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-xl bg-primary/20 text-text-color hover:bg-primary/30">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-xl size-10" data-alt="User profile picture" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDtluhE0eB5KkbCYyHM3PT7QJdZGmvytP2a1QLSPw8fn-_PPgda9eX2UzMq4Fha81GzKq10UbLyCxKqMS0QgBZV3qVD7cRGEPhMOSvrSn2wSBvO4XbWsWm-1v0F1AwsXKEVQV7BMR5hJQ0DsRQYGvO-RRM8bS2D-QBtIESxHYa3THjHiP56aJq4-w23RkwJb6vUXab4GICDdPQNwfdbneMSvKw0kstJAtS0sN145HSR8WYJCfIrQ6PoOOoicaI1rTFB84csT7FW7YU');"></div>
+</div>
+</div>
+</div>
+</header>
+<main class="container mx-auto flex-grow px-4 py-8 pt-32">
+<div class="mb-8">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden bg-white rounded-xl min-h-[320px] shadow-xl" data-alt="A tranquil, minimalist display of salon products on a beige background" style="background-image: linear-gradient(0deg, rgba(56, 71, 31, 0.5) 0%, rgba(56, 71, 31, 0) 40%), url('https://lh3.googleusercontent.com/aida-public/AB6AXuAL4tfa--SybMOMTXdE-rArBw-qIiOtex62Z2_jx4rN6wpDgGZjffqEr0Y7c43WLBY1YcONoxwBcNze2Mcui-hm9oj7w7H3JxTnsIi6amNH6VDkpzwgJJRzm5LB-32GM8fVkYKzoKDFtUKcTet_cIM7JZlE3HYywlq7TX86gU3mdwjylUK8Iy4LpwiIz_4e_YxSM86xbtFmXLhvdaHbFm_EvlmYdR3KDytRMHtDDipcsIuidDfp4zoGpFU3r0wBE2uZ1jIPdj1biPI');">
+<div class="p-8">
+<h1 class="text-white text-5xl font-bold">Shop Our Curated Collection</h1>
+</div>
+</div>
+</div>
+<p class="text-text-color text-lg font-normal leading-normal pb-6 pt-2 text-center max-w-3xl mx-auto">
+                Discover our handpicked selection of premium hair care, skin care, and styling tools, chosen by our experts to bring the salon experience to your home.
+            </p>
+<div class="flex flex-wrap items-center justify-center gap-3 py-6 border-y border-text-color/20">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-primary/20 px-4 text-sm font-medium text-text-color hover:bg-primary/30">
+<span>Hair Care</span>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-primary/20 px-4 text-sm font-medium text-text-color hover:bg-primary/30">
+<span>Skin Care</span>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-xl bg-primary/20 px-4 text-sm font-medium text-text-color hover:bg-primary/30">
+<span>Styling Tools</span>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+<div class="relative">
+<select class="appearance-none h-10 rounded-xl border-none bg-primary/20 pl-4 pr-10 text-sm font-medium text-text-color focus:ring-2 focus:ring-primary">
+<option>Sort by: New Arrivals</option>
+<option>Price: Low to High</option>
+<option>Price: High to Low</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-base">expand_more</span>
+</div>
+</div>
+<div class="grid grid-cols-1 gap-6 p-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 pt-12">
+<div class="flex flex-col gap-4 rounded-xl bg-white/50 p-4 shadow-xl transition-transform duration-300 hover:-translate-y-2">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl" data-alt="Bottle of Hydrating Shampoo" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBv0BQoP-Ya6V81JwHtdwMpOZ3FMNBpuyegBW-ieO8UmkqrTLupKEC33mrZH_GcZK46j58d16o8p5e4dtA2JBD6Xsnc1526xqP9iIbbNRLpyKc7ViWcqbeVULqhXJRnXb_iy7C61h5PL700VGS2vVsJb2pOEIX6mvnxWlU3BSbYe6fMq0NMRHEzDX__lyVKI60-zNo3Rccm4KtYD3bfsCycwPH4bAwn7m2qu865_145MfwrIkk2k8XwbvhMQdTV6YkS5Gf7oVekev4');"></div>
+<div class="flex flex-col items-start gap-2">
+<h3 class="text-text-color text-base font-bold leading-normal">Hydrating Shampoo</h3>
+<p class="text-text-color/80 text-sm font-normal leading-normal">$28.00</p>
+<button class="mt-2 w-full h-10 rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary/90">Check Availability</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-white/50 p-4 shadow-xl transition-transform duration-300 hover:-translate-y-2">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl" data-alt="Bottle of Volumizing Conditioner" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDdsx7LfVdROlyIV_pzHPVl127myh4yTYo9iTXt32-MLakJzgWnmIfNsOmudBSPVBKubPm5CpMrQD_dlvzxrYSIvViMhQsWHUEVCsw-X5Z69dpTvjVoQhDfBE5b-aV0JP34UhZWDVyan_Q-wVMa_gvBCqOH-6CsAIf1GI42M25RyQVaiX1ez9yh78K9VaRlZrTU0XxLYv4ELlnypKIZTyeEPChQ14sOvYLPwssEKftk4KceCUVTwBxWDoFUY4Izjsez3-gdVc4CkwE');"></div>
+<div class="flex flex-col items-start gap-2">
+<h3 class="text-text-color text-base font-bold leading-normal">Volumizing Conditioner</h3>
+<p class="text-text-color/80 text-sm font-normal leading-normal">$32.00</p>
+<button class="mt-2 w-full h-10 rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary/90">Check Availability</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-white/50 p-4 shadow-xl transition-transform duration-300 hover:-translate-y-2">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl" data-alt="Jar of Nourishing Hair Mask" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC1g4DNgaHbPfBq0Ld62-n3YJG-E9y5lQu-C7HK7ECSDAfZFEvnlenAm0xc0xAEokdZbeaPdBibVa1IGcwv2H0BBBU_U-hLTmfXbU1gVATm29DeLMuZjo8bf8sKyPkGstfwhRfKBghTf4-6lw7cqVYh7eL2YQ_-Brao9CjzRkk2K7nbaibFfPJiFUfouuChLpXsJMdCyMC8zVwzdyWbsyya7tpSPRW9ROW_HEi2KWg8R-xH6K5HyUcRRSYDnndUGZENm-UfIKTon4M');"></div>
+<div class="flex flex-col items-start gap-2">
+<h3 class="text-text-color text-base font-bold leading-normal">Nourishing Hair Mask</h3>
+<p class="text-text-color/80 text-sm font-normal leading-normal">$45.00</p>
+<button class="mt-2 w-full h-10 rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary/90">Check Availability</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-white/50 p-4 shadow-xl transition-transform duration-300 hover:-translate-y-2">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl" data-alt="Bottle of Heat Protectant Spray" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCNkF5lm5bRPl_FAC89qWuCsMnrK6ElpTYNV1fKTw0ivRXJghJDinzFUagt9C11S6w-vR7ywbnop5f0Rq36ytG8QKQHrfR7mXYgja2BZqV5N2htsZUcq7gbGzp0kj1qquEx6mex0d2kYsx1yG2KerhLEi_YoritK_HWDG3NRJxgCVkMbfGoLu5dZEii0oWovyFoevP8dxcVAeM6iddTxqm0lTmQwBSQMSdRSOnH2QTrbbpu2mD2gdXrvlyL0uz_yZMfcXqLSpBft4w');"></div>
+<div class="flex flex-col items-start gap-2">
+<h3 class="text-text-color text-base font-bold leading-normal">Heat Protectant Spray</h3>
+<p class="text-text-color/80 text-sm font-normal leading-normal">$25.00</p>
+<button class="mt-2 w-full h-10 rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary/90">Check Availability</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-white/50 p-4 shadow-xl transition-transform duration-300 hover:-translate-y-2">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl" data-alt="Tube of Cleansing Face Wash" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAIdT5b40XxFyqCqfCA1azGVjwUd7Ttgit33kFzZPPb3h45x3G_gdIopYaY-d4ekMfqRLxI5w5MlokcY-k4TtySMbVMnRL9yyWbeRDfR-PBpjh9YIpSUKEhw0eZuaX4c5WWOSpG5sqLaxCJwnFd4lKF0onF6EyfVnj_2RmVHp4E0zSvTbHfCDDiJ4MtqrOVn_I14urh22iiJCehPO6EGKQQAiZEVSO5XwKnAJTWBGynhAlG9EulG5pq8Q0PA2iCVzk_fspUOiZ4epM');"></div>
+<div class="flex flex-col items-start gap-2">
+<h3 class="text-text-color text-base font-bold leading-normal">Cleansing Face Wash</h3>
+<p class="text-text-color/80 text-sm font-normal leading-normal">$35.00</p>
+<button class="mt-2 w-full h-10 rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary/90">Check Availability</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-white/50 p-4 shadow-xl transition-transform duration-300 hover:-translate-y-2">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl" data-alt="Dropper bottle of Revitalizing Serum" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCjk3OP6FJUR3hOx9DIKxzfCozsHqlwEE4REahpwkespG5e7ducgWWev3P8KmbTnwPu0VcNrupCjn-upcxkk_4gGtccXC-Z3UOBr_VqodyUxJi-FEL8K04o-c6cKHrlGxGR_xX6MFjtoeir2rJo_ve6rJyeQbjrfhYBypwcXi9tjvXHNedD9Gg-qdLT41Su6xZPdNzS8emSW4Y5nU_ywPdSIVozbe2RhlTK-Cqov8KVsISA38ugkWn3eiy-OC16J4OQ_vEscrpDSWI');"></div>
+<div class="flex flex-col items-start gap-2">
+<h3 class="text-text-color text-base font-bold leading-normal">Revitalizing Serum</h3>
+<p class="text-text-color/80 text-sm font-normal leading-normal">$55.00</p>
+<button class="mt-2 w-full h-10 rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary/90">Check Availability</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-white/50 p-4 shadow-xl transition-transform duration-300 hover:-translate-y-2">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl" data-alt="Professional Hair Dryer" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDqoWnJtDcPDtjZJplU8y4GxnlhvEe81sOBlMV7kfYRYYihr-ewYg7qTmdGhe_r1NFF9jJEJTitv-xgXjJ5eY1wbVmCz8wVdl8N1L3CsbkcXtNNJsxHuHlFQJGgkpwVjCNRmBIqnF9Cs3-CUsPEcJQ5o148N5QJrt0w0VW-Mvit85L4kKsmw-t4TvnwvR18F9z9O6EfpgSBQ5UOAnnZR2OcsKhIJ3_sisqLGotq8edb-ikfjWbRRnQG3s2_bSGhUhV7JnAaNjQjyg');"></div>
+<div class="flex flex-col items-start gap-2">
+<h3 class="text-text-color text-base font-bold leading-normal">Professional Hair Dryer</h3>
+<p class="text-text-color/80 text-sm font-normal leading-normal">$150.00</p>
+<button class="mt-2 w-full h-10 rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary/90">Check Availability</button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl bg-white/50 p-4 shadow-xl transition-transform duration-300 hover:-translate-y-2">
+<div class="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl" data-alt="Ceramic Straightener" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC_gAeAvCq-XqICX0Vn1f4dS_kc3za_2-MlK4m1u9x63ndnWilljHCxjGbk1EdQtPNep9qbSIkgDPh_g8rv3ZZ-a8ZT5UFl_UYmZ0xeOHRNonPA6cTqe-M6uOY7cUsGaK9ORjZwCd0PJ3zXSAVPlMYsJzzXptnYYu73VA25gY4rkCkmd8X-XK3ieBVzM3etuauwVCnWfT61PSouYQXBKx_rxl7nRFfEWrL7Skaav6b8idr0YadjMdLl96XHRjZtbtXm2ADWMzF_VeM');"></div>
+<div class="flex flex-col items-start gap-2">
+<h3 class="text-text-color text-base font-bold leading-normal">Ceramic Straightener</h3>
+<p class="text-text-color/80 text-sm font-normal leading-normal">$120.00</p>
+<button class="mt-2 w-full h-10 rounded-xl bg-primary text-white text-sm font-bold hover:bg-primary/90">Check Availability</button>
+</div>
+</div>
+</div>
+<div class="flex justify-center items-center space-x-2 pt-12">
+<button class="flex items-center justify-center size-10 rounded-xl text-text-color hover:bg-primary/20" disabled="">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="flex items-center justify-center size-10 rounded-xl bg-primary text-white text-sm font-bold">1</button>
+<button class="flex items-center justify-center size-10 rounded-xl text-text-color hover:bg-primary/20 text-sm font-medium">2</button>
+<button class="flex items-center justify-center size-10 rounded-xl text-text-color hover:bg-primary/20 text-sm font-medium">3</button>
+<button class="flex items-center justify-center size-10 rounded-xl text-text-color hover:bg-primary/20">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</main>
+<footer class="bg-primary/20 mt-16">
+<div class="container mx-auto px-4 py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-text-color">
+<div>
+<h4 class="font-bold text-lg mb-4">Salon Artista</h4>
+<p class="text-sm">Experience the art of hair and beauty. Our commitment is to provide you with an exceptional service that leaves you feeling renewed.</p>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-4">Quick Links</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-primary" href="#">Home</a></li>
+<li><a class="hover:text-primary" href="#">Services</a></li>
+<li><a class="hover:text-primary" href="#">Products</a></li>
+<li><a class="hover:text-primary" href="#">Contact Us</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-4">Contact</h4>
+<ul class="space-y-2 text-sm">
+<li>123 Beauty Lane, Suite 100</li>
+<li>Cityville, ST 12345</li>
+<li>(123) 456-7890</li>
+<li>contact@salonartista.com</li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-lg mb-4">Follow Us</h4>
+<div class="flex space-x-4">
+<a class="text-text-color hover:text-accent" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path>
+</svg>
+</a>
+<a class="text-text-color hover:text-accent" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+<path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
+</svg>
+</a>
+<a class="text-text-color hover:text-accent" href="#">
+<svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+<path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.345 2.525c.636-.247 1.363-.416 2.427-.465C9.793 2.013 10.147 2 12.315 2zm-1.118 4.869A5.235 5.235 0 0012 17.5a5.235 5.235 0 005.23-5.631A5.235 5.235 0 0012 6.237a5.235 5.235 0 00-5.23 5.632zM12 15.655A3.59 3.59 0 018.41 12a3.59 3.59 0 013.59-3.59 3.59 3.59 0 013.59 3.59A3.59 3.59 0 0112 15.655zM18.485 5.756a1.233 1.233 0 100 2.466 1.233 1.233 0 000-2.466z" fill-rule="evenodd"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="mt-8 border-t border-text-color/20 pt-8 text-center text-sm text-text-color/80">
+<p>© 2024 Salon Artista. All Rights Reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>
