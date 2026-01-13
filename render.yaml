@@ -1,0 +1,34 @@
+# Render Blueprint Configuration
+# This file provides two deployment options:
+
+# OPTION 1: Separate Services (Recommended)
+# Deploy backend and frontend as separate services
+
+services:
+  # Backend Service
+  - type: web
+    name: artista-backend
+    env: node
+    buildCommand: cd server && npm install
+    startCommand: cd server && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false  # Set this in Render dashboard
+      - key: JWT_SECRET
+        sync: false  # Set this in Render dashboard
+      - key: FRONTEND_URL
+        sync: false  # Set this to your frontend URL after deployment
+
+  # Frontend Service (Static Site)
+  - type: web
+    name: artista-frontend
+    env: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: VITE_API_URL
+        sync: false  # Set this to your backend URL (e.g., https://artista-backend.onrender.com/api)

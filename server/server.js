@@ -4,6 +4,8 @@ import morgan from 'morgan';
 import dotenv from 'dotenv';
 import { createServer } from 'http';
 import { Server } from 'socket.io';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
 import connectDB from './config/database.js';
 import { errorHandler } from './middleware/errorHandler.js';
 
@@ -18,6 +20,9 @@ import couponsRoutes from './routes/coupons.js';
 import settingsRoutes from './routes/settings.js';
 
 dotenv.config();
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const app = express();
 const httpServer = createServer(app);
@@ -58,6 +63,18 @@ app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', message: 'Server is running' });
 });
 
+// Serve static files from React app in production
+if (process.env.NODE_ENV === 'production') {
+  // Serve static files from the React app
+  const distPath = join(__dirname, '..', 'dist');
+  app.use(express.static(distPath));
+  
+  // Handle React routing, return all requests to React app
+  app.get('*', (req, res) => {
+    res.sendFile(join(distPath, 'index.html'));
+  });
+}
+
 // Socket.io connection handling
 io.on('connection', (socket) => {
   console.log('Client connected:', socket.id);
@@ -75,4 +92,3 @@ const PORT = process.env.PORT || 5000;
 httpServer.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
-
