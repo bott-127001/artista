@@ -8,8 +8,8 @@ cd server
 npm install
 cd ..
 
-echo "Installing frontend dependencies..."
-npm install
+echo "Installing frontend dependencies (including dev dependencies)..."
+npm install --include=dev
 
 echo "Building frontend..."
 npm run build
