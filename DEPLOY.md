@@ -55,7 +55,7 @@ Deploy everything as a single service where the backend serves the frontend.
 3. **Configure the service:**
    - **Name**: `artista-app`
    - **Environment**: `Node`
-   - **Build Command**: `npm install && npm run build && cd server && npm install`
+   - **Build Command**: `npm install && cd server && npm install && cd .. && npm run build`
    - **Start Command**: `cd server && npm start`
    - **Root Directory**: Leave empty
 

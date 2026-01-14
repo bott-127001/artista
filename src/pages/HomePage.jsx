@@ -36,7 +36,7 @@ function HomePage() {
   return (
     <div className="relative w-full">
       <Header />
-      <section className="relative bg-primary text-white pt-48 pb-12 sm:pt-40 sm:pb-16 md:pt-44 md:pb-20 lg:pt-48 lg:pb-24 fade-in-section">
+      <section className="relative bg-primary text-white pt-[232px] pb-12 sm:pt-[200px] sm:pb-16 md:pt-[216px] md:pb-20 lg:pt-[232px] lg:pb-24 fade-in-section">
         <div className="absolute top-20 right-4 sm:top-28 md:top-32 sm:right-8">
           <div className="bg-white rounded-full p-3 sm:p-4 shadow-lg shadow-primary/20">
             <Logo />

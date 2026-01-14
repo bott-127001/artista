@@ -29,6 +29,7 @@ const Staff = () => {
   const [savingAttendance, setSavingAttendance] = useState(false);
   const [todayAttendance, setTodayAttendance] = useState({}); // { staffId: 'present' | 'absent' } for today
   const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
+  const [absentDateForStaff, setAbsentDateForStaff] = useState({}); // { staffId: date } for tracking selected dates
 
   useEffect(() => {
     fetchStaff();
@@ -198,32 +199,59 @@ const Staff = () => {
     }
   };
 
-  const handleMarkAbsentToday = async (staffId) => {
-    const today = new Date().toISOString().split('T')[0];
+  const handleMarkAbsent = async (staffId, date) => {
+    if (!date) {
+      toast.error('Please select a date');
+      return;
+    }
     
-    // Optimistically update UI
-    setTodayAttendance(prev => ({
-      ...prev,
-      [staffId]: 'absent'
-    }));
+    // Check if date is in the past
+    const selectedDate = new Date(date);
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    selectedDate.setHours(0, 0, 0, 0);
+    
+    if (selectedDate < today) {
+      toast.error('Cannot mark absence for past dates');
+      return;
+    }
+    
+    // Optimistically update UI if it's today
+    if (date === new Date().toISOString().split('T')[0]) {
+      setTodayAttendance(prev => ({
+        ...prev,
+        [staffId]: 'absent'
+      }));
+    }
 
     try {
       await attendanceAPI.create({
         records: [{
           staffId: staffId,
-          date: today,
+          date: date,
           status: 'absent'
         }]
       });
-      toast.success('Marked as absent for today');
-      // Refresh attendance to ensure consistency
-      fetchTodayAttendance();
+      const dateStr = new Date(date).toLocaleDateString();
+      toast.success(`Marked as absent for ${dateStr}`);
+      // Refresh attendance if it's today
+      if (date === new Date().toISOString().split('T')[0]) {
+        fetchTodayAttendance();
+      }
+      // Clear the selected date
+      setAbsentDateForStaff(prev => {
+        const updated = { ...prev };
+        delete updated[staffId];
+        return updated;
+      });
     } catch (error) {
-      // Revert on error
-      setTodayAttendance(prev => ({
-        ...prev,
-        [staffId]: 'present'
-      }));
+      // Revert on error if it's today
+      if (date === new Date().toISOString().split('T')[0]) {
+        setTodayAttendance(prev => ({
+          ...prev,
+          [staffId]: 'present'
+        }));
+      }
       toast.error(error.response?.data?.message || 'Failed to mark as absent');
     }
   };
@@ -496,12 +524,24 @@ const Staff = () => {
                       </span>
                     </td>
                     <td className="p-4 text-center">
-                      <button
-                        onClick={() => handleMarkAbsentToday(member._id)}
-                        className="px-3 py-1 bg-red-500 text-white rounded-lg hover:bg-red-600 text-sm transition-colors"
-                      >
-                        Mark Absent
-                      </button>
+                      <div className="flex flex-col gap-2 items-center">
+                        <input
+                          type="date"
+                          min={new Date().toISOString().split('T')[0]}
+                          value={absentDateForStaff[member._id] || new Date().toISOString().split('T')[0]}
+                          onChange={(e) => setAbsentDateForStaff(prev => ({
+                            ...prev,
+                            [member._id]: e.target.value
+                          }))}
+                          className="w-full sm:w-auto rounded-lg border border-gray-300 p-1.5 text-xs focus:outline-none focus:ring-2 focus:ring-primary"
+                        />
+                        <button
+                          onClick={() => handleMarkAbsent(member._id, absentDateForStaff[member._id] || new Date().toISOString().split('T')[0])}
+                          className="px-3 py-1 bg-red-500 text-white rounded-lg hover:bg-red-600 text-sm transition-colors w-full sm:w-auto"
+                        >
+                          Mark Absent
+                        </button>
+                      </div>
                     </td>
                     <td className="p-4">
                       <div className="flex gap-2 justify-center">
